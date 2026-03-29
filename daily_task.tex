@@ -1,0 +1,136 @@
+\documentclass[11pt,twoside]{report}
+%%%%%%%%%%%%%%%%%%%%
+
+\input{packages}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{pdftitle = Report, pdfauthor = {First Last}, pdfstartview=FitH, pdfkeywords = essay, pdfpagemode=FullScreen, colorlinks, anchorcolor = red, citecolor = blue,urlcolor=teal, filecolor=green, linkcolor=codepurple, plainpages=false}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength{\bibitemsep}\setlength{\bibitemsep}{.2\baselineskip plus .05\baselineskip minus .05\baselineskip}
+\newlength{\bibparskip}\setlength{\bibparskip}{0cm}
+\let\oldthebibliography\thebibliography
+\renewcommand\thebibliography
+\oldthebibliography
+  \setlength{\parskip}{\bibitemsep}
+  \setlength{\itemsep}{\bibparskip}
+%setmainfont{TeX Gyre Pagella}
+
+%%%%%%%%%%%%%%%%%%%%%%%%55
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}   % clear everything
+
+% ---------- Marks ----------
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}}
+
+
+\renewcommand{\sectionmark}[1]{%
+  \markright{\quad #1}}
+
+% ---------- Header Layout ----------
+% Even pages (left pages)
+\fancyhead[LE]{\textbf{\thepage}}                     % page number left
+\fancyhead[RE]{\nouppercase{\leftmark}}      % chapter title centered
+
+% Odd pages (right pages)
+\fancyhead[LO]{\nouppercase{\rightmark}}     % section title left
+\fancyhead[RO]{\textbf{\thepage}}                     % page number right
+
+% ---------- Lines ----------
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\newcommand{\starredline}{\leavevmode\xleaders\hbox{\makebox[1em]{\hss$\star$\hss}}\hfill\kern0pt}
+
+ 
+% Line spacing
+\renewcommand{\baselinestretch}{1.05} %1.5
+
+%Line with star at the end of the week.
+\newcommand{\stardivider}{
+\noindent\hrulefill\quad$\displaystyle ***$\quad\hrulefill 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\Huge{ RESEARCH JOURNAL - 2026}}
+\author{\\ \LARGE{Pravin Sharma}
+\\ 5$^{th}$ Year, Ph.D. Student
+\\ 
+\\
+\vspace{6.5cm}
+\\
+\\
+\\
+\\ Department of Applied Science \\ William \& Mary
+\\
+\\ 
+%\\November 2022
+}
+%\date{November 2022}
+\date{\Huge{2026}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+% \endtit
+
+\newcommand{\cmark}{\textcolor{green}{\textbf{\Large\ding{51}}}}  % ✓
+\newcommand{\xmark}{\textcolor{red}{\textbf{\Large\ding{55}}}} % X
+\newcommand{\qmark}{\textcolor{blue}{\textbf{\Large?}}}
+
+\begin{document}
+\sloppy
+\thispagestyle{headings}
+\maketitle
+
+
+% \FloatBarrier
+\pagenumbering{roman}
+% \chapter*{Preface}
+% \input{preface.tex}
+
+% \newpage
+%\pagenumbering{roman}
+\cleardoublepage
+
+\newpage
+\tableofcontents
+\thispagestyle{plain}
+% \listoffigures
+% \listoftables
+
+% Include the list of abbreviations here if required.
+\newpage
+\pagenumbering{arabic}
+
+
+\newpage
+
+\setcounter{section}{0}
+
+
+% \include{Months/January}
+% \include{Months/February.tex}
+\include{Months/March}
+\include{Months/April}
+% \include{Months/May}
+% \include{Months/June}
+% \include{Months/July}
+% \include{Months/August}
+% \include{Months/September}
+% \include{Months/October}
+% \include{Months/November}
+% \include{Months/December}
+% \include{Months/Magnetism}
+% \include{Months/Research_papers}
+% \include{Months/Skills_related}
+% \include{Months/Meetings}
+
+\newpage
+\begin{spacing}{0.8}
+	\renewcommand{\bibname}{\bf{References}}
+	\bibliographystyle{IEEEtran}
+	\bibliography{Library}
+\end{spacing}
+
+\end{document}

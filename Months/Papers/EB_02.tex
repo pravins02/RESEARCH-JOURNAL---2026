@@ -1,0 +1,92 @@
+\section{Atomistic study of Positive Exchange Bias in Hard/Soft ferromagnetic bilayer nanosystem \href{https://doi.org/10.1088/1402-4896/acb23c}{[\textit{Physica Scripta, 98 2 025403 (2023)}]}}
+
+
+\section*{Main points from the Paper}
+\subsection*{\centering\underline{Abstract}}
+\hspace{2cm} The calculations for the exchange spring nano-bilayer with intermixing of high and low anisotropic moments at the interface are studied in this paper, and an unexpected phenomenon of positive exchange bias is observed. \hl{The influence of temperature is clearly observed in the shift and the width of the M-H loop}. They have claimed that the interface roughness is the main cause for the shift in the hysteresis loop.    
+\subsection*{\underline{I. Introduction}}
+\begin{enumerate}
+    \item The multilayer exhibits perpendicular magnetic anisotropy along with an out-of-plane exchange bias field. They have observed a monotonically increasing EB magnitude with the annealing field, which saturates at $\pm1$ T.
+    \item The exchange-bias effect was seen first in the core-shell structure, and later, this was also observed for the FM-AFM system.
+    \item The coupling between FM and AFM spins at the interface adds an internal field (bias field) to the applied field, which is a trivial source of asymmetrical hysteresis loop and eventually leads to the existence of exchange bias. 
+    \item Also, the induction of anisotropy at the interface might be another reason for the unidirectional shift of the loop. [\textcolor{red}{ref. 4 -anisotropy affects the EB}]
+    \item Exchange bias is commonly used in magnetic sensors due to the enhanced thermal stability of the material; other technological applications include GMR devices, hard disks, and hard drives, and it also serves as the basis for many other applications in spintronics.
+    \item Of many existing theoretical assumptions for the exchange bias, one of the main ones is the presence of interfacial uncompensated AFM spin magnetic moments [\textcolor{red}{ref.9: Exchange Bias paper.}]
+    \item Different morphology systems have been studied for EB-related studies, mostly done for the thin film bilayers, as there can be enhanced control over the interface, and they are more suitable for device fabrication.
+    \item The shift in the M-H loop can be in any direction.
+    \item Positive EB is far less common than negative EB as found in several heterostructures.
+    \item The presence of AFM exchange coupling at the interface of the FM bilayer system is responsible for the EB effect. 
+    \item A large amount of disorder present at the interface of the FM-AFM can also be the reason for this effect.
+    \item Atomistic spin models are used to study the exchange-bias field caused by the roughness in simple cubic Co/CoO core-shell NPs \cite{wuInfluenceAtomicRoughness2020,influenceofinterfacial2011}. 
+    \item A key feature of the exchange bias effect, i.e., unidirectional shift of the hysteresis loop, is observed.
+\end{enumerate}
+
+\subsection*{\underline{II. Methods}}
+\begin{enumerate}
+    \item Classical Heisenberg Hamiltonian and Landau-Lifshitz Gilbert equations are employed to study the EB effect in Hard/Soft FM Fe/Co bilayers.
+    \item Both flat and roughened surfaces are simulated, particularly looking for the effect of roughness on the EB.
+    \item Details about the system for the simulation and system are:
+    \begin{enumerate} [\ding{212}]
+        \item BCC crystal structure for both Fe and Co.
+        \item Dimension of the system: $x=10$ nm, $\times y=10$ nm, $\times z=4$ nm. total atoms, 32368 atoms with $50\%$ Fe and $50\%$ Co.
+        \item Understand the extensively written Hamiltonian.
+        \item Exchange interactions: {$J_{Co}=-6.064\times10^{-21}J/link$}; \\{$J_{Fe}=-7.05\times10^{-21}J/link$}; {$J_{Fe-Co}=1.0\times10^{-22}J/link$}
+        \item Uniaxial anisotropy: {$K_{Co}=6.69\times10^{-24}J/atom$}; \\{$K_{Fe}=5.65\times10^{-25}J/atom$}
+        \begin{table}
+            \centering
+            \begin{tabular}{ccccc}\hline \hline
+                Symbol & Value & Parameter & Units & \\ \hline 
+                $\alpha$ &  & Gilbert Damping paramter  & - & \\
+                 &  &  &  & \\
+                 &  &  &  & \\
+                 &  &  &  & \\
+                 &  &  &  & \\
+                 &  &  &  & \\ \hline \hline
+            \end{tabular} 
+            \caption{Parameters used for the Exchange bias calculation for the Fe/Co in Junaid Ahsan's paper}
+            \label{tab:Fe/Co_parameter_EB}
+        \end{table}
+        \item Uniaxial anisotropy direction = 0, 0, 1 for Co and 1, 0, 0 for Fe.
+        \item Heun integration scheme was used for the hysteresis calculations.
+        \item Here for the easy damping, the critical damping value is used; $\alpha=1.0$ [\textcolor{red}{19, 20}]
+        \item Applied field was varied from: $+1.0$ T to $-1.0$ T in steps of $0.001$ T.
+        \item The magnetic field was applied along the $xy-plane$ of the bilayer.
+        \item The details of time-steps are;
+        \begin{verbatim}
+            equilibration-time-steps=100000
+            loop-time-steps=100000
+        \end{verbatim}   
+    \end{enumerate}
+\end{enumerate}
+
+\subsection*{\underline{III. Results and Discussions}}
+\begin{enumerate}
+    \item The influence of interface roughness was studied by Evans et.al.,\cite{influenceofinterfacial2011} for FM-AFM core-shell spherical nanoparticles. The roughness gives rise to uncompensated magnetic moments at the interface. 
+    \item The degree of coupling between the FM and AFM was increased by the roughness at the interface. 
+    \item EB fundamentally being an interfacial phenomenon, any modification of the interface structure has a significant effect on it.
+    \item The change in the microstructure in the different crystalline orientations changes due to intermixing of hard and soft atomic spin moments.
+    \item Additionally, the other prerequisite for EB is that there is a difference in the anisotropy of two catenated layers; if not, then they will rotate under the effect of an externally applied field coherently.
+    \item In this paper, the shape of the M-H loop is decided by the direction of the applied field and the magnetic anisotropy in the Fe and Co.
+    \item The uniaxial anisotropy direction is set as per the easy axes of the individual system. For Fe, it is 100; for Co, it is 001. This is the case for a bulk system.
+    \item If the anisotropy is along the same direction, then one would expect a more square loop.
+    \item There is a difference in the magnitude and also the direction of the anisotropy in this paper for observing the Positive EB (PEB).
+    \item There is a shift in a positive direction in all of the cases when the interface is flat, i.e., there is no intermixing.
+    \item The positive EB in the smooth interfaced bilayer can thus be attributed to the;
+    \begin{itemize}
+        \item larger magnetic anisotropy energy of the hard (Co) layer than the soft (Fe) layer.
+        \item ferrimagnetic nature of the interface.
+        \item anisotropy direction.
+    \end{itemize}
+    \item The alloy formation at the interface leads to the enhancement in the EB as observed in all simulated temperatures.
+    \item There is a decrease in the coercivity with elevating temperature.
+\end{enumerate}
+
+\subsection*{\underline{IV. Conclusions and further work}}
+\begin{enumerate}
+    \item Positive EB was studied using ASD, with AFM coupled Fe/Co magnetic bilayer system.
+    \item It is verified that EB is an interfacial phenomenon.
+    \item Major contribution comes from the interfacial exchange interaction between Co and Fe magnetic spin moments.
+    \item Improvements in the positive EB were observed after increasing the roughness.
+\end{enumerate}
+\vspace{1cm}
+The effect of EB variation on the degree of roughness and interfacial mixing of atomic moments can be studied. - \hl{Future Work Related}

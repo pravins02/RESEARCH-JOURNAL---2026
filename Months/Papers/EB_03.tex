@@ -1,0 +1,106 @@
+\newpage
+\section{Exchange bias study in FM/AFM bilayers: Atomistic simulations \href{https://doi.org/10.1016/j.physo.2025.100265}{[\textit{Physics Open, 23 April (2025)}]}}
+
+
+\section*{Main points from the Paper}
+\subsection*{\centering\underline{Abstract}}
+\hspace{2cm} The study of exchange bias (EB) effect through simulations is done by utilizing the LLG equation and Heisenberg Spin model Hamiltonian for FM/AFM bilayer system. The AFM layer near the interface was disturbed, and the bilayer's M-H loop broadened and became asymmetric.
+The EB effect can be artificially tuned by adjusting the heterostructure, which can be useful for scientific applications.
+
+
+\subsection*{\underline{I. Introduction}}
+\begin{enumerate}
+    \item The shift in the hysteresis loop when a magnetic system is composed of a ferromagnetic(FM) and antiferromagnetic(AFM) layer. This is the numerical shift of the M-H loop.
+    \item The modulus of the average of the difference between the positive $H_c(+ve)$ and negative $H_c(-ve)$ coercive field, if positive, is the numerical value.
+    \item The EB has been observed in various systems, ferrimagnets (FI), spin glass(SG), and spin disorder (SD).
+    \item The geometries like core-shell, bilayers, and multilayers have been studied to study the EB effect because the interface can be easily tuned in these systems.
+    \item The phenomenon of EB is a direct consequence of the exchange interaction between two differently ordered magnetic layers at their interface.
+    \item Some factors that affect the EB strength directly are:
+    \begin{itemize}
+        \item strength of the exchange coupling,
+        \item thickness of differently ordered magnetic layers,
+        \item temperature of the system.
+    \end{itemize}
+    \item The exact behavior of $H_{eb}$ as a function of temperature can vary depending on the specific materials, magnetic ordering, and nature of the interface.[\textcolor{red}{ref. 7-9, very imp.}]
+    \item They have done Atomistic spin dynamics simulations for Cobalt(Co) \& AFM (CoO) in the framework of classical spin Hamiltonian and LLG equation.
+    \item ASD simulations are immensely useful in determining temperature-dependent magnetic properties.
+    \item The hysteresis provides a lot of information about the magnetic properties of the system. In this case, the loops are simulated with flat and roughed interfaces between FM/AFM layers.
+    \item Interface mixing is central to the method in this system.
+    \item This work demonstrates that controlled interfacial intermixing of FM spins within the AFM layer directly affects the M-H loop.
+    \item The systematic integration of FM moments into the AFM bulk suggests that EB can be tailored by adjusting the spatial distribution of uncompensated moments.
+\end{enumerate}
+
+\subsection*{\underline{II. Methods}}
+\begin{enumerate}
+    \item Details about the system for the simulation and system are:
+    \begin{enumerate} [\ding{212}]
+        \item BCC crystal structure for both Co and CoO.
+        \item Dimension of the system: $x=2$ nm, $\times y=2$ nm, $\times z=6$ nm. total atoms, 2448 atoms with $70\%$ Co and $30\%$ CoO.
+        \item Understand the extensively written Hamiltonian.
+        \item Exchange interactions: {$J_{Co}=6.064\times10^{-21}J/link$}; \\{$J_{CoO}=-4.21\times10^{-21}J/link$}; {$J_{Co-CoO}=5.6\times10^{-22}J/link$}
+        \item Uniaxial anisotropy: {$K_{Co}=4.644\times10^{-24}J/atom$}; \\{$K_{CoO}=4.644\times10^{-23}J/atom$}
+        \item Magnetic moments are: $\mu_{Co}=1.72\mu_B$ and $\mu_{CoO}=3.5\mu_B$ 
+        % \begin{table}[h!]
+        %     \centering
+        %     \begin{tabular}{ccccc}\hline \hline
+        %         Symbol & Value & Parameter & Units & \\ \hline 
+        %         $\alpha$ &  & Gilbert Damping paramter  & - & \\
+        %          &  &  &  & \\
+        %          &  &  &  & \\
+        %          &  &  &  & \\
+        %          &  &  &  & \\
+        %          &  &  &  & \\ \hline \hline
+        %     \end{tabular} 
+        %     \caption{Parameters used for the Exchange bias calculation for the Fe/Co in Junaid Ahsan's paper}
+        %     \label{tab:Fe/Co_parameter_EB}
+        % \end{table}
+    %     \item Uniaxial anisotropy direction = 0, 0, 1 for Co and 1, 0, 0 for Fe.
+        \item Heun integration scheme was used for the hysteresis calculations.
+    %     \item Here for the easy damping, the critical damping value is used; $\alpha=1.0$ [\textcolor{red}{19, 20}]
+        \item Applied field was varied from: $+1.0$ T to $-1.0$ T in steps of $0.001$ T.
+    %     \item The magnetic field was applied along the $xy-plane$ of the bilayer.
+        \item The details of time-steps are;
+        \begin{verbatim}
+            equilibration-time-steps=100000
+            loop-time-steps=100000
+            time-step = 1.0e-15
+        \end{verbatim}   
+    \end{enumerate}
+    \item The LLG equation models the fact that spin moments in a ferromagnet do not align with the local field direction. Instead, they undergo precession under the influence of an external magnetic field.
+    \item The precession cannot continue indefinitely, as it is damped.
+    \item Microscopic damping is denoted by $\alpha$. In this paper, they have used $\alpha=1.0$ as the critical damping.
+\end{enumerate}
+
+\subsection*{\underline{III. Results and Discussions}}
+\begin{enumerate}
+    \item Exchange bias (EB) is basically a shift in the magnetic hysteresis loop $(H_{\mathrm{EB}})$ and alterations in its coercive width $(H_{\mathrm{C}})$.
+    \item Previous studies have emphasized the role of cooling fields in establishing EB--where higher fields reduce $(H_{\mathrm{EB}})$ and may even induce positive bias [\textcolor{red}{ref. 25}]
+    \item The approach used in this work is to initialize the FM and AFM layers in the magnetization state expected at the end of the cooling process.
+    \item And the simulation temperature remains well below the N\'eel temperature, which helps in preserving the magnetic order while eliminating the need for external cooling fields.    
+    \item The temperatures at which the simulations are conducted are 0 K, 5 K, and 10 K, which exhibit perfect symmetry about the field axis, confirming the absence of EB in fully compensated systems.
+    \item Introducing the controlled interfacial uncompensated through FM-AFM intermixing dramatically alters this behavior.
+    \item The intermixing parameter of 0.07 is used in this work. Here, the FM moments penetrate the AFM bulk.
+    \item This subtle modification generates localized spin frustration, disrupting AFM exchange interactions and creating a net interfacial magnetization.
+    \item This is as observed in the case of spin-glass dynamics in partially disordered AFM layers \textcolor{red}{[28,29]} where low FM doping near the interface creates localized frustration.
+    \item And as a result, the broadening of the hysteresis loops is observed, which is attributed to the increasing energy barrier for magnetization switching.
+    \item The significantly observed EB values are: 53 mT, 46 mT, and 28 mT at 0 K, 5 K, and 10 K, respectively.
+    \item Any M-H loop with temperature greater than 10 K, the simulated loops were very noisy due to the thermal fluctuations of the atomic spin moments and in adequate to furnish any physical results.
+    \item At zero field, intermixed FM moments induce spin canting (frustration) within the AFM lattice, creating an uncompensated interface.
+    \item The application of $-1.0$ T field aligns FM moments antiparallel to the field while pinning AFM spins through exchange coupling.
+    \item As the field reverses to $+1.0$ T, the FM layer rotates coherently, overcoming the unidirectional anisotropy imposed by the disordered AFM interface.
+    \item This asymmetry in the magnetization reversal route directly produces the observed EB \cite{influenceofinterfacial2011}, rather than bulk anisotropy-- a conclusion our intermixing approach corroborates while extending to controlled doping scenarios.
+    \item The straight $47\%$ reduction in $H_{\mathrm{EB}}$ from 0 K to 10 K reflects thermal disruption of interfacial coupling, while parallel $43\%$ $H_C$ decrease indicates reduced domain stability.
+    \item The temperature sensitivity of EB $(\Delta H_{\mathrm{EB}}\approx-2.5$ mT/K $)$ highlights the need for materials with high $T_N$ and engineered interfaces to sustain functionality across operational temperature ranges.
+    \item Furthermore, enhancing EB through controlled uncompensation while reducing thermal stability suggests optimal doping level exists for specific applications.
+    \subsubsection*{Effect of ferromagnetic layer thickness on exchange bias}
+    \item Since EB is primarily an interfacial effect, if the thickness of the FM layer is increased, the same interface pinning force has to affect a large volume of the FM, effectively diluting its impact and reducing the effective EB field. Empirically, $H_{\mathrm{EB}}\propto\frac{1}{t_{FM}}$, confirming that as the thickness of the FM layer increases, the overall effect of the interfacial pinning diminishes.
+    \item Three cases where the FM thickness is 0.7 t, 0.75t, and 0.80t at 0 K are plotted, and the M-H loop area is diminished significantly.
+\end{enumerate}
+
+\subsection*{\underline{IV. Conclusions and Further work}}
+\begin{enumerate}
+    \item This work demonstrates that the EB in the FM/AFM bilayer system can be well controlled through the interfacial intermixing of FM spins into the AFM layer.
+    \item With the help of ASD, it has been shown that the spatial distribution of uncompensated AFM moments plays a vital role in the manifestation of EB.
+    \item The direct correlation between FM intermixing, EB behavior, broadening of M-H loop, and thermal effects, such as blocking temperature, is observed in this paper.
+    \item This study provides insights into how interfacial modifications influence macroscopic EB properties, emphasizing the importance of microscopic spin interactions in determining macroscopic behavior.
+\end{enumerate}

@@ -1,0 +1,172 @@
+\section{Introduction to Prompt Engineering for Generative AI- LinkedIn Learning}
+\subsection{Introduction to Gen-AI}
+\subsection*{What is Generative AI?}
+\hspace{1cm} A broad description of AI that generates data such as text, images, audio, video, or code. 
+
+A \textbf{stop sequence}, such as double hashtags, signals the end of an example, thereby helping structure the input data for the model.
+
+\textbf{Zero-shot learning} is described as prompting a language model with an instruction without providing it with examples of the task it is supposed to perform.
+
+\subsection*{What is Prompt Engineering?}
+\hspace{1cm} It refers to constructing, crafting ideal inputs in order to get the most out of large language models and Generative AI.
+
+\begin{enumerate}
+    \item Examples of LLMs
+    \begin{itemize}
+        \item ChatGPT, GPT-4, GPT-4o
+        \item Microsoft Copilot
+        \item Google Gemini
+        \item Claude AI
+        \item DALL.E - Image generating model
+        \item Sora - Video generative tool
+    \end{itemize}
+    \item \underline{What is tokens in Gen AI?} A unit that can be understood by LLMs.
+    \begin{tabular}{|c|c|}
+            \hline Words & Tokens   \\
+            \hline Everyday & [Every, day] \\
+            \hline Joyful & [Joy, ful] \\
+            \hline I'd like & [I, 'd, like] \\ \hline
+    \end{tabular}
+    \item \underline{What is Tokenization?} The mechanism by which a model splits its inputs into tokens.
+    \item Tokenization model can really change the working procedure of the LLMs.
+    \item \underline{What are Large Language Models?}
+\end{enumerate}
+
+\subsection*{ChatGPT}
+\begin{enumerate}
+    \item Widely adopted AI system
+    \item Powered by OpenAI GPT models, \\
+    G: Generative (Generates data)\\
+    P: Pre-trained(trained pre on large amount of data)\\
+    T:Transformer (type of language model architecture)
+    \item Supports multiple modalities (means it supports multiple input methods like text, image, documents, etc)
+    \item Supports Voice instructions (Feels like natural conversation).
+    \item Refined using reinforcement learning from human feedback (RLHF).
+    \item Excels at following instructions.
+\end{enumerate}
+
+\subsection*{Google Gemini}
+\begin{enumerate}
+    \item Gemini supports a very large context window (a number of tokens that you can see or input for both the input and the output).
+    \item Also supports different modalities, text, images, raw audio, or sometimes video.
+    \item Robust platform for developers.
+    \item Also leverages Transformer and Mixture of Experts.
+\end{enumerate}
+
+\subsection*{Copilot}
+\begin{enumerate}
+    \item Leverages GPT, DALL\cdot E
+    \item Enterprise-ready
+    \item Integrated into Microsoft 365
+\end{enumerate}
+
+\subsection*{Claude AI}
+\begin{enumerate}
+    \item Leads in many benchmarks.
+    \item Excels in code generation
+    \item Works on the Few-shot learning \footnote{The learning where we teach a model to do something by showing it a few structured examples as opposed to giving it some instructions.}.
+    \item Few-shot learning allows fine-tuning control over the output.
+\end{enumerate}
+
+\subsection{Text Prompt Best Practices}
+\subsubsection*{1. Give Clear Instructions:}
+Unclear prompts may result in generic or inaccurate outputs. Be sure to include relevant details, such as the desired output format and context.
+
+\subsubsection*{2. Assign a Persona:}
+Begin your prompt by assigning a specific role to the AI assistant.
+
+\vspace{0.25cm}
+Examples:\\
+"\textit{You are a senior marketing professional specializing in social media campaigns...}"\\
+"\textit{As a user experience expert, you are capable of...}"
+
+\subsubsection*{3. Use Delimiters to Structure Your Prompt:}
+Delimiters can help organize the prompt clearly. This example uses three quotes as delimiters:
+
+\vspace{0.25cm}
+\textit{The following is a part of a Wikipedia article on Language Models:}
+\vspace{0.5cm}
+\\
+"\textit{A language model is a probabilistic model of a natural language. In 1980, the first significant statistical language model was proposed, and during the decade, IBM conducted ‘Shannon-style’ experiments in which potential sources of improvement for language modeling were identified by observing and analyzing human subjects' performance in predicting or correcting text.}" 
+\vspace{0.5cm}\\
+In this prompt, markdown-style ticks are used with the label "python" \\
+\textit{How can we make this function more efficient with lru\_cache?}
+\begin{verbatim}
+`python
+def fib(n):
+    if n in {0,1}:
+        return n
+    return fib(n-1) + fib(n-2)
+`
+\end{verbatim}
+
+\subsubsection*{4. Break Tasks into Substacks:}
+Divide complex tasks into manageable steps.
+
+\subsection{AI-Generated Image Landscape}
+\subsubsection*{Controversies}
+\begin{enumerate}[\ding{113}]
+    \item Are artists getting enough credits?
+    \item How do we define art?
+    \item What is the potential for misuse?
+\end{enumerate}
+
+\subsubsection*{Existing image generating tools}
+\begin{enumerate}
+    \item \textbf{DALL \cdot E}
+    \begin{enumerate} [\ding{109}]
+        \item Created by OpenAI.
+        \item Diffusion-based.
+        \item Trained on millions of images.
+        \item Available through Copilot, ChatGPT.
+    \end{enumerate}
+    \item \textbf{Midjourney}
+    \begin{enumerate} [\ding{109}]
+        \item Extremely powerful.
+        \item Discord interface.
+        \item Fewer free capabilities.
+        \item Needs a subscription to run via Discord/Webpage.
+    \end{enumerate}
+    \item \textbf{Stable Diffusion}
+    \begin{enumerate} [\ding{109}]
+        \item Developed by Stability AI
+        \item Open-source
+    \end{enumerate}
+    \item \textbf{Sora - For Video}
+    \begin{enumerate} [\ding{109}]
+        \item Diffusion-based
+        \item Generates extremely realistic videos.
+        \item Struggles with some generations of ChatGPT.
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Creating a custom GPT}
+Custom GPTs can help you in many ways.
+\begin{enumerate}
+    \item Reduce repetition.
+    \item Allow for shared workflows.
+    \item Easy to get started with.
+\end{enumerate}
+\vspace{1.0cm}
+\textbf{Steps to create a Personal GPT are as follows:}
+\begin{enumerate}[\ding{212}]
+    \item Go to website \href{https://chat.openai.com/create}{ChatGPT Creating Mode}
+    \item Create the GPT there.
+    \item You can call the GPT in the main GPT portal and call it from there by typing \hl{@ <put the GPT name>}, then start the invitation details.
+\end{enumerate}
+\hspace{0.5cm}There is also a branch of AI known as Multimodal AI. Here, you can present images of different ingredients and then ask it to generate a recipe. In the same way, you can draw a random page of a website and ask to make the HTML file for that page.
+
+\textbf{Fine-Tuning:}
+\begin{enumerate}[\ding{212}]
+    \item Get more out of the model.
+    \item Use smaller models.
+    \item Fewer tokens in the prompt.
+    \item Costlier
+    \item Good for long-term.
+\end{enumerate}
+
+Create an OpenAI developer account, then obtain an API section key. Then I can make my own GPT more accessible by making it friendlier. Learn this later when you have more time. This charges a fee and then charges according to the application.
+
+GenAI is powerful, so use it wisely and responsibly, verify the output yourself, and consider the AI's bias. Carefully review the policies, especially those related to work. Seek approval before using a new tool, and also protect the sensitive data before proceeding.
+
+\stardivider

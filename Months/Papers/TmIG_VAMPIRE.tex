@@ -1,0 +1,89 @@
+\section{Magnetocrystalline Anisotropy Enables Field-Free Deterministic Switching in $\mathrm{Tm_3Fe_5O_{12}/Pt}$ Bilayers: An Atomistic Spin Dynamics Study - [\href{https://doi.org/10.1021/acsami.5c23180}{\textit{ACS Applied Materials \& Interfaces}, 2026}]}
+
+\section*{Main points from the Paper}
+\subsection*{\centering\underline{Abstract}}
+\hspace{2cm} Field-free switching of perpendicular magnetization is done in this paper. They have observed that the cubic magnetocrystalline anisotropy (MCA) of TmIG spontaneously breaks mirror symmetry along the out-of-plane direction, giving rise to $\mathrm{3m-}$symmetric torques that enable deterministic switching without external fields. Systematic tuning of current density and pulse width allows control over the switching-mode. They have also done the comparative simulations on $\mathrm{Y_3Fe_5O_{12} (YIG)}$ to confirm that MCA-driven field-free switching is a universal feature of rare-earth iron garnets.
+
+\subsection*{\centering\underline{I. Introduction}}
+\begin{enumerate}
+    \item Manipulation of perpendicular magnetization by spin-orbit torque (SOT) has recently emerged as the cornerstone for high-density, ultrafast, and energy-efficient spintronic devices.
+    \item In the absence of external symmetry breaking, the system relaxes stochastically into up or down states once the current is turned off.
+    \item It is usually enforced by an in-plane magnetic field [\textcolor{red}{ref. 1, 2, 6}]
+    \item Eliminating the need for external fields requires intrinsic symmetry breaking.
+    \item Recently, crystalline symmetry itself has been identified as an intrinsic pathway to deterministic SOT switching, demonstrated low symmetry materials such as $\mathrm{WTe_2, IrO_2, Ni_4W}$ as well as in  noncollinear antiferromagnets and altermagnets.
+    \item These systems exploit symmetry-governed spin textures to generate characteristic angular responses in field-free magnetization switching.
+    \item Not relying on the structural asymmetry, the effect originates from the intrinsic MCA of TmIG [\textcolor{red}{ref. 34\&35}].
+    \item This discovery highlights a fundamentally new mechanism for field-free SOT switching in high-symmetry crystals, relying on intrinsic anisotropy rather than extrinsic structural asymmetry.
+    \item They have done the cubic MCA mediated switching across rare-earth iron garnets and done that for both TmIG and YIG.
+    \item This work mainly provides the anisotropy-driven spintronic phenomena and establish a symmetry-based design principle for ferrimagnetic memory and terahertz spintronic applications.
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Meeting with Rajnandini about the TmIG, Jan 24, 2026}
+We discussed more in details about the TmIG and we both finalized that we need to just go through the paper first and then can later work on designing the material in the VAMPIRE. 
+
+I will work on the understanding of the \verbatiminput{sim:unit-cell-category} part and then only I will work on developing this system.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{\centering\underline{II. Methods and Materials}}
+\begin{enumerate}
+    \item $\mathrm{Tm_3Fe5O_{12} (TmIG)}$ is a cubic rare-earth iron garnet  with lattice constant $\sim 12.3$ \r{A} with Fe$^{3+}$ ions occupying octahedral (a-site) and tetrahedral(d-site) positions, while Tm$^{3+}$ ions reside in dodecahedral (c-site) positions.
+    \item There is antiferromagnetic coupling between the Fe sublattices and parallel alignment of Tm$^{3+}$ moments with a $a$-site Fe$^{3+}$ sublattice yield a ferrimagnetic ground state with non-zero net magnetization.
+    \item Though being TmIG as intrinsic cubical anisotropic, the magneto elastic coupling plays a crucial role in orienting the magnetization in epitaxial TmIG thin films.
+    \item Here, they have considered an epitaxial $(111)$-oriented TmIG film capped with a Pt layer.
+    \item TmIG being a magnetic insulator, the charge current is limited to the adjacent Pt layer, with TmIG magnetization switching driven by SOT generated from Pt-converted pure spin current injected into TmIG.
+    \item The \hl{details of the simulations} are given below:
+    \begin{enumerate}[\ding{212}]
+        \item The damping parameter used is, $\mathrm{\alpha=0.033}$.
+        \item The three-sublattice model $(\mathrm{Fe_1, Fe_2, Tm})$ is used with periodic boundary conditions in the $\mathrm{x-y}$ plane.
+        \item The TmIG film is oriented along the $[111]$ axis normal to the plane.
+        \item The Hamiltonian only includes the exchange interactions, uniaxial PMA, and MCA terms. [See eqn: 1 of the paper]
+        \item The SOT was modeling as a damping-like term, with its amplitude $H_{DL}$ being proportional to the applied current density.
+        \item The temperature dependent magnetization curve simulated via the atomistic model has Curie temperature of \hl{$\sim 530$ K}, matching experiments and validating model accuracy.
+        \item \hl{See the supporting information again after this to know more about the simulation details}.
+    \end{enumerate}
+\end{enumerate}
+\subsection*{\centering\underline{III. Results and Discussion}}
+\subsubsection*{\underline{A. Spin-Orbit Torque Driven Switching}}
+\begin{enumerate}
+    \item The thickness of the Pt used here is 3nm, and in-plane charge current density is applied which created a pure spin current $j_s$ along $+z$ direction via spin-orbit coupling.
+    \item After rotating the direction of $j_c$, the azimuthal angle $\sigma$ denoted by $\Phi_{\sigma}$. The normalized net magnetization, $\sum_i\mu_{s,i}S_i/\sum\mu_{s,i}$ for representative case $(\Phi_{\sigma}=0^\circ, 30^\circ, 90^\circ)$ under a 2 ns charge current pulse (corresponding to a damping-like SOT field $H_{DL}=0.5$ T).
+    \item Upon the pulse injection the Magnetization component $\mathrm{M_z}$ dropped to zero within picosecond time $(\sim 11$ ps$)$.
+    \item The magnetization reversal was only observed at $(\Phi_{\sigma}= 30^\circ$ and $90^\circ)$ within 5.5 ns whereas, no reversal was seen at $(\Phi_{\sigma}=0^\circ)$.
+    \item The switching polarity reverses every $60^\circ$, manifesting the intrinsic 3-fold angular periodicity of TmIG. And this periodicity originates from the material's MCA, which generate as effective anisotropy field proportional to $\sin3\Phi_{\sigma}$.
+    \item At each of these critical angles $(\Phi_{\sigma}=n\cdot60^\circ, \mathrm{where}$ $n = 0, 1, ...,6)$, the MCA contribution vanished, which restores pure PMA symmetry and yields equal probabilities for up and down states.
+    \item In order to get the microscopic origin of the field-free switching, they have analyzed the spin torques during the relaxation dynamics.
+    \item Once current pulse is turned off $t=2.5$ ns $)$, the SOT contribution vanished, and the spin evolution is governed solely by the intrinsic torque $\mu_{s,i}\mathrm{S}_i\times\mathrm{H_{eff}^i}$, where the local effective field $\mathrm{H_{eff}^i}$ includes local Heisenberg exchange interactions and MCA contributions.
+    \item The net magnetization $\mathrm{\textbf{M}}$ is locked along $[1\bar10]$. The thermal fluctuations can destabilize this state, leading ot stochastic relaxation toward either the $+z$ or $-z$ orientation.
+    \item When the $\Phi_{\sigma}=30^\circ$ ($\sigma||[2\overline{11}]$), the MCA field generates finite torque despite vanishing contributions from PMA and exchange. This torque is responsible for the magnetization precession and ultimately forces relaxation toward a new equilibrium state along $-z$.
+    \item Further the effect of the SOT on the amplitude of magnetization reversal by applying 5 ns current pulses was also studied.
+    \item A critical threshold of SOT field $(\sim 0.9$ mT$)$ is identified. Below this value, the magnetic moment only tilts slightly from its initial $+z$ orientation and relaxes back after the pulse.
+    \item And above this threshold, the magnetization is driven into the in-plane direction defined by $\sigma$, enabling deterministic reversal to $-z$.
+    \item While the PMA remains isotropic in the xy-plane and the exchange field sows negligible angular dependence, the MCA exhibits a distinct 3-fold rotational symmetry.
+\end{enumerate}
+\subsubsection*{\underline{B. THz Oscillations and Toggle-Like Switching}}
+\begin{enumerate}
+    \item High SOT field drives TmIG into a precessional regime making the stabilization of the symmetric switching.
+    \item Above the threshold SOT of 3.75 T $(\mathrm{J_c=5.919\times10^{13} A/m^2})$, oscilaltions grow and stabilizes into large-angle precession in a plane perpendicular to $\sigma$.
+    \item There is antiphase precession in $Fe_1$ and $Fe_2$ due to the antiferromagnetic coupling, while Tm remains weakly coupled, exhibiting smaller amplitude precession in phase with Fe$_2$.
+    \item These three sublattices oscillate at the identical frequency of 3.3954 THz. The oscillation frequency increases linearly with the applied SOT field strength, in agreement with earlier reports. [\textcolor{red}{ref. 46 \& 47}]
+    \item This highlight the application of TmIG for high-frequency spnitronic applications.
+    \item As the SOT field increases (Fig. 4a), the enhanced oscillations of the z-component magnetization broaden the precessional motion during the pulse, causing the sublattices at the end of the pulse to exit the $M_z=0$ plane and relax stochastically into either the $+z$ or $-z$ state in a non-deterministic manner.
+    \item This precession-mediated process enables toggle-like switching in TmIG at high charge-current pulses and a fixed spin polarization $\Phi_\sigma$.
+    \item There is contrary switching in the case of Fe$_2$ switching with a 4.2T SOT field, as it relaxes back to the $+z$ direction (parallel to its initial state). This anomalous polarity reversal confirms the toggle-like switching phenomenon in TmIG.
+    \item With the constant SOT field of 4.0T but variation in the pulse-width, the toggle-like switching is observed specifically at 7.0 and 8.5 nm, while other durations yield conventional $-z$ switching.
+    \item These results demonstrate that the combined control of current density and pulse width provides a pathway to modulate switching modes in TmIG/Pt devices, bridging deterministic to toggle-like switching regimes.
+    \item This helps for high density "SOT-MRAM" for reliable "write-erase" cycling.
+\end{enumerate}
+\subsubsection*{\underline{C. Generalization of 3m-symmetry SOT Switching In Rare-Earth Iron Garnets}}
+\begin{enumerate}
+    \item They have also performed these calculations on $\mathrm{YIG, Y_3Fe_5O_{12}}$, which shares the TmIG's crystal structure and exhibits both MCA and PMA due to magnetoelastic coupling.
+    \item  2 ns current pulses with an effective SOT field of 0.5 T at varying azimuthal angles, YIG exhibits a $3m$-symmetric switching behavior analogous to TmIG.
+    \item The low damping constant in the case of TIG prolongs the relaxation time.
+    \item YIG with a lower damping constant shows smoother magnetization dynamics and reduced post switching oscillations, which can facilitate faster and more stable switching.
+    \item The switching performance in the YIG originates from the lower MCA energy of YIG, which results in more isotropic in-plane magnetic anisotropy, thereby suppressing the MCA-induced $M_z$ wiggles.
+    \item Additionally, we have seen that the reduced MCA smooths the switching profile, while PMA variation has minimal effect.
+    \item These calculations demonstrate that $3m$-symmetric SOT switching is intrinsic to rare-earth iron garnets and tunable via magnetic anisotropy engineering.
+\end{enumerate}
+\subsection*{\centering\underline{IV. Conclusion}}
+Atomistic spin-dynamics simulations show that TmIG/Pt bilayers can achieve deterministic, field-free magnetization reversal driven by spin-orbit torque, with a characteristic threefold angular symmetry set by cubic magnetocrystalline anisotropy. At low current densities, the switching threshold varies periodically with the in-plane spin-polarization direction, while strong current pulses excite terahertz precession that enables toggle-type switching controlled by pulse width. Similar behavior is found in YIG, with faster dynamics. Overall, materials combining MCA and perpendicular anisotropy provide a symmetry-based route to low-power spintronic switching, though thermal effects from high currents remain to be addressed in future work.
+
+\hl{See the supporting information in ZoTeRo for the parameters and then do follow this writing here.}
