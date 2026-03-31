@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  31 MAR 2026 19:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  31 MAR 2026 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1403,14 +1403,14 @@ LaTeX Warning: The counter will not be printed.
              The label is: \ding {212} on input line 25.
 
 
-Underfull \vbox (badness 1152) has occurred while \output is active []
+Underfull \vbox (badness 1242) has occurred while \output is active []
 
 
 
 [7]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: \ding {212} on input line 59.
+             The label is: \ding {212} on input line 60.
 
 ))
 
@@ -1467,7 +1467,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  101i,11n,120p,1233b,1503s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\pravi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\pravi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\pravi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on daily_task.pdf (13 pages, 151881 bytes).
+Output written on daily_task.pdf (13 pages, 152000 bytes).
 PDF statistics:
  363 PDF objects out of 1000 (max. 8388607)
  137 named destinations out of 1000 (max. 500000)
