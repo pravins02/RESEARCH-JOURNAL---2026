@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  30 MAR 2026 19:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.21)  31 MAR 2026 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1403,8 +1403,7 @@ LaTeX Warning: The counter will not be printed.
              The label is: \ding {212} on input line 25.
 
 
-LaTeX Warning: The counter will not be printed.
-             The label is: \ding {212} on input line 43.
+Underfull \vbox (badness 1152) has occurred while \output is active []
 
 
 
@@ -1420,14 +1419,21 @@ LaTeX Warning: The counter will not be printed.
 
  (Months/April.tex
 Chapter 2.
-(Months/4. April/Week-14.tex))
+(Months/4. April/Week-14.tex
+
+LaTeX Warning: The counter will not be printed.
+             The label is: \ding {212} on input line 21.
+
+
 
 [9
 
 
 
 
-] (daily_task.bbl
+]))
+
+[10] (daily_task.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
@@ -1438,7 +1444,7 @@ See the caption package documentation for explanation.
 
 
 
-[10
+[11
 
 
 
@@ -1453,17 +1459,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 45171 strings out of 473536
- 950447 string characters out of 5714956
- 1460687 words of memory out of 5000000
- 67360 multiletter control sequences out of 15000+600000
+ 45174 strings out of 473536
+ 950448 string characters out of 5714956
+ 1459687 words of memory out of 5000000
+ 67358 multiletter control sequences out of 15000+600000
  607618 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,11n,120p,1233b,1503s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\pravi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\pravi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\pravi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pravi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on daily_task.pdf (12 pages, 149874 bytes).
+Output written on daily_task.pdf (13 pages, 151881 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 132 named destinations out of 1000 (max. 500000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 137 named destinations out of 1000 (max. 500000)
  225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
