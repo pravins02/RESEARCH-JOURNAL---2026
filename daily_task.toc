@@ -1,8 +1,6 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}March}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Week - 12}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Week - 13}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Week - 14}{7}{section.1.3}%
-\contentsline {chapter}{\numberline {2}April}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Week - 14 - continued}{9}{section.2.1}%
-\contentsline {chapter}{\bf {References}}{11}{chapter*.2}%
+\contentsline {section}{\numberline {1.1}Week - 14}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}April}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Week - 14}{3}{section.2.1}%
+\contentsline {chapter}{\bf {References}}{5}{chapter*.2}%

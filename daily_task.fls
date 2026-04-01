@@ -657,35 +657,20 @@ INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint1
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\public\esint\esint10.tfm
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchr8c.tfm
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchr8c.tfm
-INPUT .\Months\3. March\Week-12.tex
-INPUT .\Months\3. March\Week-12.tex
-INPUT .\Months\3. March\Week-12.tex
-INPUT .\Months\3. March\Week-12.tex
-INPUT Months\3. March\Week-12.tex
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchr8t.tfm
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchb8t.tfm
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1095.tfm
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchb8t.tfm
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecss1200.tfm
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\zapfding\pzdr.tfm
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchr8t.tfm
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\vf\bitstrea\charter\bchb8t.vf
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchb8r.tfm
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\vf\bitstrea\charter\bchb8t.vf
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchb8r.tfm
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\vf\bitstrea\charter\bchr8t.vf
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchr8r.tfm
-INPUT .\Months\3. March\Week-13.tex
-INPUT .\Months\3. March\Week-13.tex
-INPUT .\Months\3. March\Week-13.tex
-INPUT .\Months\3. March\Week-13.tex
-INPUT Months\3. March\Week-13.tex
 INPUT .\Months\3. March\Week-14.tex
 INPUT .\Months\3. March\Week-14.tex
 INPUT .\Months\3. March\Week-14.tex
 INPUT .\Months\3. March\Week-14.tex
 INPUT Months\3. March\Week-14.tex
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\vf\bitstrea\charter\bchr8c.vf
+INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchr8t.tfm
+INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchb8t.tfm
+INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsx1095.tfm
+INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchb8t.tfm
+INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\zapfding\pzdr.tfm
+INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\vf\bitstrea\charter\bchb8t.vf
+INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchb8r.tfm
+INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\vf\bitstrea\charter\bchb8t.vf
+INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\tfm\bitstrea\charter\bchb8r.tfm
 INPUT .\Months\April.tex
 INPUT .\Months\April.tex
 OUTPUT Months\April.aux
@@ -710,24 +695,16 @@ INPUT Months\March.aux
 INPUT .\Months\April.aux
 INPUT .\Months\April.aux
 INPUT Months\April.aux
-INPUT C:\Users\pravi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk
-INPUT C:\Users\pravi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk
-INPUT C:\Users\pravi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1200.pk
-INPUT C:\Users\pravi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1200.pk
 INPUT C:\Users\pravi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk
 INPUT C:\Users\pravi\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\bitstrea\charter\bchb8a.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\bitstrea\charter\bchb8a.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\bitstrea\charter\bchr8a.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\bitstrea\charter\bchr8a.pfb
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\pravi\AppData\Local\Programs\MiKTeX\fonts\type1\urw\zapfding\uzdr.pfb
